@@ -17,3 +17,6 @@ chmod +x seed/scripts/*.sh
 ```bash
 ./seed/scripts/pull-from-seed.sh
 ```
+
+NOTE:
+Before pulling, run `./seed/scripts/check-before-pull.sh` to ensure there is something to pull. Otherwise git subtree pull will force creating empty commit histories.
